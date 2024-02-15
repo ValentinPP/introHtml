@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+      
+      .container {
+        width: 800px;
+        margin: 0 auto;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">home</a>
+        </li>
+        <li>
+          <a href="about.html">about</a>
+        </li>
+        <li>
+          <a href="contact.html">contact</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>Accesibilitate si Tabele</h1>
+    <article class="bg-grey">
+      <p title="in cadrul cursului JS la IT factory, sesiunea 2 este despre accesibilitate si tabele">Sesiunea 2 - accesibilitate si tabele</p>
+      <img src="" alt="imagine goala">
+    </article>
+  </header>
+  <main>
+    <!-- <section id="animals">
+      <div class="land-animals">
+        <p>Caine</p>
+        <p>Pisica</p>
+        <p>Urangutan</p>
+      </div>
+      <div class="birds">
+        <p class="domestic-bird">Rata</p>
+        <p class="domestic-bird">Gainia</p>
+        <p class="domestic-bird">Gasca</p>
+        <p class="wild-bird">Soim</p>
+      </div>
+    </section> -->
+    <section>
+      <h2>Tabel prezenta</h2>
+      <div class="container">
+        <table>
+        <thead>
+            <tr>
+              <th>Lista Nume</th>
+              <th>Prezenta</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>George</td>
+              <td>prezent</td>
+              <td>0744Xxxxxx</td>
+            </tr>
+            <tr>
+              <td>Amalia</td>
+              <td>prezenta</td>
+              <td>0744Xxxxxx</td>
+            </tr>
+            <tr>
+              <td>Sami</td>
+              <td>absent</td>
+              <td>0744Xxxxxx</td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+    </section>
+    <section>
+      <h2>Preturi Piata</h2>
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>Nume Aliment</th>
+              <th>Pret</th>
+              <th>Cantitate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mere</td>
+              <td>2 lei</td>
+              <td>5 kg</td>
+            </tr>
+            <tr>
+              <td>Prune</td>
+              <td rowspan="2">5 lei</td>
+              <td>1 kg</td>
+            </tr>
+            <tr>
+              <td>Portocale</td>
+              <td>2 kg</td>
+  
+            </tr>
+            <tr>
+              <td>Banane</td>
+              <td>7 lei</td>
+              <td>3 kg</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td colspan="2">36 lei</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>

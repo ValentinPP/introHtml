@@ -1,0 +1,67 @@
+p::first-line{
+    color: darkblue;
+    font-weight: 700;
+}
+
+P::first-letter {
+    font-size: 40px;
+    padding: 2px;
+    background-color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p::after{
+    content: attr(href  = "http://www.google.com");
+    display: inline;
+    text-decoration: none;
+
+}
+
+
+/* button {
+    background-color: rgba(255, 153, 0, 0.842);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition:1s
+}
+button:hover {
+    background-color: aqua;
+}
+a:visited{
+    color: grey;
+}
+
+.container div ~ p{
+    background-color: brown;
+}
+
+.container > div ~ul {
+    background-color: antiquewhite;
+}
+
+ul > li:nth-child(1){
+    background-color: red;
+}
+.container div ~ *{
+    background-color: black;
+}
+
+
+.parent > div{
+    background-color: red;
+}
+.parent > p{
+    background-color: yellow;
+}
+.child > p{
+    color: blue;
+}
+
+.grandchild > p {
+    color: aqua;
+    background-color: rgb(250, 215, 215);
+}
+.parent div, .parent p{
+    background-color: green;
+}
+/*{background-color: black;} */

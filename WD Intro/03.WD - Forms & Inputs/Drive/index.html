@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .form{
+      display: flex; 
+      flex-direction: column;
+      width: 400px; 
+      margin: 0 auto; 
+      background-color: #e8f1ff;
+      padding: 20px;
+    }
+    .form * {
+      margin: 5px 0px;
+    }
+    label{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Formulare si inputuri</h1>
+  </header>
+  <main></main>
+  <footer>
+    <!-- <h2>Contact</h2> -->
+    <form>
+      <fieldset class="form">
+        <legend>Formular de Rezervare Masa</legend>
+        <label for="firstName">Prenume</label>
+        <input type="text" name="firstName" size="10" minlength="3" required>
+        <label for="middleName">Nume Mijlociu</label>
+        <input type="text" name="middleName" disabled>
+        <label for="lastName">Nume</label>
+        <input type="text" name="lastName" value="Ionescu" readonly>
+        <label for="email" name="email">Email</label>
+        <input type="email" maxlength="20" required>
+        <label for="female">Feminin</label>
+        <input type="radio" name="gender" id="female">
+        <label for="male">Masculin</label>
+        <input type="radio" name="gender" id="male">
+        <label for="residence">Tara de Resedinta</label>
+        <select name="residence">
+          <option value="Romania">Romania</option>
+          <option value="Germany">Germania</option>
+          <option value="Italy">Italia</option>
+          <option value="USA">SUA</option>
+          <option value="Norway">Norvegia</option>
+        </select>
+        <hr>
+        <label for="age">Care este varsta ta?</label>
+        <input type="number" name="age" min="18" max="99">
+        <p>Selecteaza mancarea ta favorita</p>
+        <label for="pizza">Pizza</label>
+        <input type="checkbox" name="pizza">
+        <label for="ciorba-de-burta">Ciorba de burta</label>
+        <input type="checkbox" name="ciorba-de-burta">
+        <label for="stake-with-fries">Gratar cu cartofi prajiti</label>
+        <input type="checkbox" name="stake-with-fries">
+        <label for="reservation-date">Data rezervarii</label>
+        <input type="date" name="reservation-date">
+        <label for="food-price-range">Interval preturi meniu</label>
+        <input type="range" name="food-price-range" min="100" max="500">
+        <label for="password">Parola pentru rezervare masa</label>
+        <input type="password" name="password" minlength="6" maxlength="20">
+        
+        <textarea name="message" cols="30" rows="10" maxlength="150" placeholder="Scri-ne aici"></textarea>
+        <!-- <button>Trimite formular</button> -->
+        <input type="submit" value="Trimite">
+      </fieldset>
+    </form>
+    <!-- <button>Trimite formular</button>
+    <input type="button" value="Trimite-inputDeTipButon"> -->
+  </footer>
+</body>
+</html>
